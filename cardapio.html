@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emerich Burger: projeto acadêmico de delivery.">
+  <title>Cardápio | Emerich Burger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="java.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container topo">
+      <a class="logo" href="index.html">
+        EMERICH
+        <span>BURGER</span>
+      </a>
+
+      <button id="menu-botao" class="botao secundario menu-botao" type="button"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html" aria-current="page">Cardápio</a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="carrinho.html">Carrinho (<span id="contador">0</span>)</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+
+        <button id="tema" class="botao secundario" type="button"
+                aria-label="Alternar modo claro e escuro">☀️</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <span class="etiqueta">Feito para sua fome</span>
+      <h1>Nosso cardápio</h1>
+
+      <label class="busca">
+        Buscar produto
+        <input id="busca" type="search" placeholder="Digite o nome ou um ingrediente" maxlength="80">
+      </label>
+
+      <p id="resultado-busca" role="status"></p>
+
+      <div class="grade" id="lista-produtos">
+        <article class="card">
+          <a href="vulcao.html">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80" alt="Vulcão Burger" loading="lazy">
+          </a>
+
+          <div class="conteudo">
+            <h3>Vulcão Burger</h3>
+            <p>Hambúrguer, queijo, alface e molho especial da casa.</p>
+            <span class="preco">R$ 39,99</span>
+            <button class="botao" type="button" data-adicionar data-id="1" data-nome="Vulcão Burger" data-centavos="3999" data-imagem="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80">Adicionar ao carrinho</button>
+          </div>
+        </article>
+        <article class="card">
+          <a href="classico.html">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80" alt="Clássico da Casa" loading="lazy">
+          </a>
+
+          <div class="conteudo">
+            <h3>Clássico da Casa</h3>
+            <p>Hambúrguer, queijo, tomate e maionese da casa.</p>
+            <span class="preco">R$ 29,90</span>
+            <button class="botao" type="button" data-adicionar data-id="2" data-nome="Clássico da Casa" data-centavos="2990" data-imagem="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80">Adicionar ao carrinho</button>
+          </div>
+        </article>
+        <article class="card">
+          <a href="batata.html">
+            <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80" alt="Batata Crocante" loading="lazy">
+          </a>
+
+          <div class="conteudo">
+            <h3>Batata Crocante</h3>
+            <p>Porção de batatas fritas para acompanhar seu pedido.</p>
+            <span class="preco">R$ 18,90</span>
+            <button class="botao" type="button" data-adicionar data-id="3" data-nome="Batata Crocante" data-centavos="1890" data-imagem="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80">Adicionar ao carrinho</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="mensagem" role="status" aria-live="polite"></div>
+
+  <footer>
+    <div class="container">
+      <div>
+        <strong>EMERICH BURGER</strong>
+        <p>Seu próximo burger favorito.</p>
+      </div>
+
+      <div>
+        <a href="sobre.html">Quem somos</a>
+        <span> · </span>
+        <a href="contato.html">Contato</a>
+
+        <p>
+          <small>Projeto acadêmico — delivery demonstrativo.</small>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

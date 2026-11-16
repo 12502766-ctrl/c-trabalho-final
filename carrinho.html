@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emerich Burger: projeto acadêmico de delivery.">
+  <title>Carrinho | Emerich Burger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="java.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container topo">
+      <a class="logo" href="index.html">
+        EMERICH
+        <span>BURGER</span>
+      </a>
+
+      <button id="menu-botao" class="botao secundario menu-botao" type="button"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="carrinho.html" aria-current="page">Carrinho (<span id="contador">0</span>)</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+
+        <button id="tema" class="botao secundario" type="button"
+                aria-label="Alternar modo claro e escuro">☀️</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section id="carrinho-vazio">
+      <h1>Seu carrinho está vazio</h1>
+      <p>Escolha algo gostoso para começar.</p>
+      <a class="botao" href="cardapio.html">Explorar cardápio</a>
+    </section>
+
+    <section id="carrinho-conteudo" hidden>
+      <h1>Meu carrinho</h1>
+
+      <div id="itens-carrinho"></div>
+
+      <div class="resumo card conteudo">
+        <p>Subtotal: <span id="subtotal">R$ 0,00</span></p>
+        <p>Entrega demonstrativa: <span id="entrega">R$ 5,00</span></p>
+        <h2>Total: <span id="total">R$ 0,00</span></h2>
+        <p>Sem cobrança ou entrega real.</p>
+        <button class="botao" id="finalizar" type="button">Finalizar pedido de teste</button>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="mensagem" role="status" aria-live="polite"></div>
+
+  <footer>
+    <div class="container">
+      <div>
+        <strong>EMERICH BURGER</strong>
+        <p>Seu próximo burger favorito.</p>
+      </div>
+
+      <div>
+        <a href="sobre.html">Quem somos</a>
+        <span> · </span>
+        <a href="contato.html">Contato</a>
+
+        <p>
+          <small>Projeto acadêmico — delivery demonstrativo.</small>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

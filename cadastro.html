@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emerich Burger: projeto acadêmico de delivery.">
+  <title>Cadastro | Emerich Burger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="java.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container topo">
+      <a class="logo" href="index.html">
+        EMERICH
+        <span>BURGER</span>
+      </a>
+
+      <button id="menu-botao" class="botao secundario menu-botao" type="button"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="carrinho.html">Carrinho (<span id="contador">0</span>)</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html" aria-current="page">Cadastro</a>
+
+        <button id="tema" class="botao secundario" type="button"
+                aria-label="Alternar modo claro e escuro">☀️</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <form id="form-cadastro" class="formulario">
+        <h1>Crie sua conta</h1>
+        <p>Use somente dados fictícios nesta demonstração.</p>
+
+        <label>
+          Nome completo
+          <input name="nome" autocomplete="name" minlength="3" maxlength="80" required>
+        </label>
+
+        <label>
+          E-mail
+          <input name="email" type="email" autocomplete="email" maxlength="120" required>
+        </label>
+
+        <div class="campos">
+          <label>
+            Telefone
+            <input name="telefone" type="tel" autocomplete="tel" inputmode="numeric"
+                   data-mascara="telefone" placeholder="(00) 00000-0000" maxlength="15"
+                   pattern=".{14,15}" title="Informe o telefone com DDD." required>
+          </label>
+
+          <label>
+            CPF
+            <input name="cpf" inputmode="numeric" data-mascara="cpf" placeholder="000.000.000-00"
+                   minlength="14" maxlength="14" required>
+          </label>
+        </div>
+
+        <div class="campos">
+          <label>
+            CEP
+            <input name="cep" autocomplete="postal-code" inputmode="numeric" data-mascara="cep"
+                   placeholder="00000-000" minlength="9" maxlength="9" required>
+          </label>
+
+          <label>
+            Número
+            <input name="numero" inputmode="numeric" data-numerico pattern="[0-9]+" maxlength="6" required>
+          </label>
+        </div>
+
+        <label>
+          Rua e bairro
+          <input name="endereco" autocomplete="street-address" maxlength="160" required>
+        </label>
+
+        <div class="campos">
+          <label>
+            Cidade
+            <input name="cidade" autocomplete="address-level2" maxlength="80" required>
+          </label>
+
+          <label>
+            UF
+            <input name="uf" autocomplete="address-level1" minlength="2" maxlength="2"
+                   pattern="[A-Za-z]{2}" required>
+          </label>
+        </div>
+
+        <label>
+          Senha de demonstração
+          <input name="senha" type="password" autocomplete="new-password" minlength="8" maxlength="64" required>
+        </label>
+
+        <label>
+          Confirme a senha
+          <input name="confirmacao" type="password" autocomplete="new-password" minlength="8" maxlength="64" required>
+        </label>
+
+        <p class="aviso">A senha não será salva. Este cadastro não cria uma conta real.</p>
+
+        <div class="acoes">
+          <button class="botao" type="submit">Cadastrar</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <div id="mensagem" role="status" aria-live="polite"></div>
+
+  <footer>
+    <div class="container">
+      <div>
+        <strong>EMERICH BURGER</strong>
+        <p>Seu próximo burger favorito.</p>
+      </div>
+
+      <div>
+        <a href="sobre.html">Quem somos</a>
+        <span> · </span>
+        <a href="contato.html">Contato</a>
+
+        <p>
+          <small>Projeto acadêmico — delivery demonstrativo.</small>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

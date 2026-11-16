@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emerich Burger: projeto acadêmico de delivery.">
+  <title>Quem somos | Emerich Burger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="java.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container topo">
+      <a class="logo" href="index.html">
+        EMERICH
+        <span>BURGER</span>
+      </a>
+
+      <button id="menu-botao" class="botao secundario menu-botao" type="button"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="carrinho.html">Carrinho (<span id="contador">0</span>)</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+
+        <button id="tema" class="botao secundario" type="button"
+                aria-label="Alternar modo claro e escuro">☀️</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <span class="etiqueta">Nossa ideia</span>
+      <h1>Quem somos</h1>
+
+      <p>
+        A Emerich Burger é uma hamburgueria fictícia criada para um projeto acadêmico de delivery.
+      </p>
+
+      <div class="faixa">
+        <h2>Uma experiência simples e saborosa</h2>
+        <p>
+          Nossa proposta é facilitar a escolha dos produtos, a montagem do carrinho
+          e a consulta dos pedidos.
+        </p>
+      </div>
+
+      <a class="botao" href="cardapio.html">Conhecer os produtos</a>
+    </section>
+
+  </main>
+
+  <div id="mensagem" role="status" aria-live="polite"></div>
+
+  <footer>
+    <div class="container">
+      <div>
+        <strong>EMERICH BURGER</strong>
+        <p>Seu próximo burger favorito.</p>
+      </div>
+
+      <div>
+        <a href="sobre.html">Quem somos</a>
+        <span> · </span>
+        <a href="contato.html">Contato</a>
+
+        <p>
+          <small>Projeto acadêmico — delivery demonstrativo.</small>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

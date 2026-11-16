@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Emerich Burger: projeto acadêmico de delivery.">
+  <title>Batata Crocante | Emerich Burger</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="java.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container topo">
+      <a class="logo" href="index.html">
+        EMERICH
+        <span>BURGER</span>
+      </a>
+
+      <button id="menu-botao" class="botao secundario menu-botao" type="button"
+              aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">☰</button>
+
+      <nav id="menu" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="cardapio.html" aria-current="page">Cardápio</a>
+        <a href="pedidos.html">Pedidos</a>
+        <a href="carrinho.html">Carrinho (<span id="contador">0</span>)</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="login.html">Login</a>
+        <a href="cadastro.html">Cadastro</a>
+
+        <button id="tema" class="botao secundario" type="button"
+                aria-label="Alternar modo claro e escuro">☀️</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80" alt="Batata Crocante">
+
+      <div>
+        <a href="cardapio.html">← Voltar ao cardápio</a>
+        <h1>Batata Crocante</h1>
+        <p>Porção de batatas fritas para acompanhar seu pedido.</p>
+        <span class="preco">R$ 18,90</span>
+        <button class="botao" type="button" data-adicionar data-id="3" data-nome="Batata Crocante" data-centavos="1890" data-imagem="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80">Adicionar ao carrinho</button>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="mensagem" role="status" aria-live="polite"></div>
+
+  <footer>
+    <div class="container">
+      <div>
+        <strong>EMERICH BURGER</strong>
+        <p>Seu próximo burger favorito.</p>
+      </div>
+
+      <div>
+        <a href="sobre.html">Quem somos</a>
+        <span> · </span>
+        <a href="contato.html">Contato</a>
+
+        <p>
+          <small>Projeto acadêmico — delivery demonstrativo.</small>
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
